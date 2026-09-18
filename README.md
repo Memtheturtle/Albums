@@ -14,6 +14,10 @@ This is purely for testing purposes right now, so if you found this somehow cong
 
 VERSION HISTORY:
 
+0.1.2.0 - First 6 cards
+
+0.1.1.0 - Nothing im an idiot
+
 0.1.0.0 - Initial Release
 
 CURRENT FEATURES:
