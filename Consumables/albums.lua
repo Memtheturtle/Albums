@@ -149,6 +149,41 @@ SMODS.Sound({
     path = "ityttmom.mp3",
 })
 
+SMODS.Sound({
+    key = "lagwafis",
+    path = "lagwafis.mp3",
+})
+
+SMODS.Sound({
+    key = "shsl",
+    path = "shsl.mp3",
+})
+
+SMODS.Sound({
+    key = "the_wall",
+    path = "the_wall.mp3",
+})
+
+SMODS.Sound({
+    key = "dsotm",
+    path = "dark.mp3",
+})
+
+SMODS.Sound({
+    key = "metallica",
+    path = "metallica.mp3",
+})
+
+SMODS.Sound({
+    key = "faps",
+    path = "l_faps.mp3",
+})
+
+SMODS.Sound({
+    key = "the_finale_2",
+    path = "the_finale_2.mp3",
+})
+
 SMODS.Consumable{
     key = 'back_in_black', --key
     set = 'Albums', --the set of the card: corresponds to a consumable type
@@ -358,6 +393,24 @@ SMODS.Consumable{
     end, 
 }
 
+SMODS.Consumable{
+    key = 'metallica', --key
+    set = 'Albums', --the set of the card: corresponds to a consumable type
+    atlas = 'Albums', --atlas
+    pos = {x = 10, y = 0}, --position in atlas
+    loc_txt = {
+        name = 'Metallica', --name of card
+        text = { --text of card
+            'Placeholder'
+        }
+    },
+    can_use = function(self,card)
+       return true
+    end,
+    use = function(self,card,area,copier)
+        play_sound('albums_metallica')
+    end, 
+}
 
 SMODS.Consumable{
     key = 'sour', --key
@@ -379,6 +432,44 @@ SMODS.Consumable{
 }
 
 SMODS.Consumable{
+    key = 'dsotm', --key
+    set = 'Albums', --the set of the card: corresponds to a consumable type
+    atlas = 'Albums', --atlas
+    pos = {x = 8, y = 1}, --position in atlas
+    loc_txt = {
+        name = 'Dark Side of the Moon', --name of card
+        text = { --text of card
+            'Placeholder'
+        }
+    },
+    can_use = function(self,card)
+       return true
+    end,
+    use = function(self,card,area,copier)
+        play_sound('albums_dsotm')
+    end, 
+}
+
+SMODS.Consumable{
+    key = 'the_wall', --key
+    set = 'Albums', --the set of the card: corresponds to a consumable type
+    atlas = 'Albums', --atlas
+    pos = {x = 7, y = 1}, --position in atlas
+    loc_txt = {
+        name = 'The Wall', --name of card
+        text = { --text of card
+            'Placeholder'
+        }
+    },
+    can_use = function(self,card)
+       return true
+    end,
+    use = function(self,card,area,copier)
+        play_sound('albums_the_wall')
+    end, 
+}
+
+SMODS.Consumable{
     key = '( )', --key
     set = 'Albums', --the set of the card: corresponds to a consumable type
     atlas = 'Albums', --atlas
@@ -394,6 +485,82 @@ SMODS.Consumable{
     end,
     use = function(self,card,area,copier)
         play_sound('albums_( )')
+    end, 
+}
+
+SMODS.Consumable{
+    key = 'lagwafis', --key
+    set = 'Albums', --the set of the card: corresponds to a consumable type
+    atlas = 'Albums', --atlas
+    pos = {x = 3, y = 1}, --position in atlas
+    loc_txt = {
+        name = 'Ladies and gentlemen we are floating in space', --name of card
+        text = { --text of card
+            'Placeholder'
+        }
+    },
+    can_use = function(self,card)
+       return true
+    end,
+    use = function(self,card,area,copier)
+        play_sound('albums_lagwafis')
+    end, 
+}
+
+SMODS.Consumable{
+    key = 'shsl', --key
+    set = 'Albums', --the set of the card: corresponds to a consumable type
+    atlas = 'Albums', --atlas
+    pos = {x = 5, y = 1}, --position in atlas
+    loc_txt = {
+        name = 'Sweet Heart, Sweet Life', --name of card
+        text = { --text of card
+            'Placeholder'
+        }
+    },
+    can_use = function(self,card)
+       return true
+    end,
+    use = function(self,card,area,copier)
+        play_sound('albums_shsl')
+    end, 
+}
+
+SMODS.Consumable{
+    key = 'faps', --key
+    set = 'Albums', --the set of the card: corresponds to a consumable type
+    atlas = 'Albums', --atlas
+    pos = {x = 5, y = 1}, --position in atlas
+    loc_txt = {
+        name = 'L Faps (Diss Track)', --name of card
+        text = { --text of card
+            'Placeholder'
+        }
+    },
+    can_use = function(self,card)
+       return true
+    end,
+    use = function(self,card,area,copier)
+        play_sound('albums_faps')
+    end, 
+}
+
+SMODS.Consumable{
+    key = 'the_finale_2', --key
+    set = 'Albums', --the set of the card: corresponds to a consumable type
+    atlas = 'Albums', --atlas
+    pos = {x = 5, y = 1}, --position in atlas
+    loc_txt = {
+        name = 'The Finale II: Official Soundtrack', --name of card
+        text = { --text of card
+            'Placeholder'
+        }
+    },
+    can_use = function(self,card)
+       return true
+    end,
+    use = function(self,card,area,copier)
+        play_sound('albums_the_finale_2')
     end, 
 }
 
