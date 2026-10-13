@@ -90,11 +90,6 @@ SMODS.Sound({
 })
 
 SMODS.Sound({
-    key = "depression_cherry",
-    path = "depression_cherry.mp3",
-})
-
-SMODS.Sound({
     key = "minecraft_volume_alpha",
     path = "minecraft_volume_alpha.mp3",
 })

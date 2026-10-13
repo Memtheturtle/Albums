@@ -14,6 +14,12 @@ This is purely for testing purposes right now, so if you found this somehow cong
 
 VERSION HISTORY:
 
+0.1.5.0 - 64 Total Cards now added
+
+0.1.4.0 - Art for more cards
+
+0.1.3.0 - 30 Cards now added
+
 0.1.2.0 - First 6 cards
 
 0.1.1.0 - Nothing im an idiot
@@ -24,9 +30,11 @@ CURRENT FEATURES:
 
 New Consumable Type: Albums
 
- Total New Albums
+64 Total New Albums
 
 Custom Music and SFX!
+
+Some Custom Art
 
 
 PLANNED FEATURES:
